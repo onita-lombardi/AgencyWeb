@@ -106,3 +106,35 @@ main{
 .btn-secondary:hover{
     background-color: #e6e6e6;    
 }
+
+
+/* -----  SERVICES ----- */
+
+.section-services{
+    display: grid; /* organiza com linhas e colunas */
+    grid-template-columns: repeat(4, max-content); /* 1fr fração - calculo automático que distribui pela página inteira
+     ---- max-content - cada um ocupa só o seu espaço*/
+    justify-content: center;
+    gap: 25px;
+    padding: 30px 0; /* não coloca o padding lateral para ajudar na responsividade */
+    border-bottom: 0.7px solid var(--color-gray-3);
+}
+
+.container-item-services{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.container-item-services h2{
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-h4);
+    font-size: var(--font-size-h4);
+}
+
+.container-item-services p{
+    font-family: var(--font-family-primary);
+    color: var(--color-gray-2);
+    font-size: var(--font-size-caption);
+}
+
